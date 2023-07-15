@@ -8,10 +8,10 @@ function Topbar() {
     <>
       <div className="top">
         <div className="topLeft">
-          <i class="topIcon fa-brands fa-twitter fa-shake"></i>
-          <i class="topIcon fa-brands fa-facebook fa-spin"></i>
-          <i class="topIcon fa-brands fa-youtube fa-beat-fade"></i>
-          <i class="topIcon fa-brands fa-google fa-spin fa-spin-reverse"></i>
+          <i className="topIcon fa-brands fa-twitter fa-shake"></i>
+          <i className="topIcon fa-brands fa-facebook fa-spin"></i>
+          <i className="topIcon fa-brands fa-youtube fa-beat-fade"></i>
+          <i className="topIcon fa-brands fa-google fa-spin fa-spin-reverse"></i>
         </div>
         <div className="topCenter">
           <ul className="topList">

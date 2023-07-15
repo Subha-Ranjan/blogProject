@@ -10,7 +10,10 @@ const categoryRoute = require("./routes/categories");
 const dotenv = require("dotenv"); //to function .env file - hide imp details
 const path = require("path");
 const fs = require("fs");
+const cors = require("cors");
+
 dotenv.config();
+app.use(cors());
 app.use(express.json()); // parse json data
 app.use("/images", express.static(path.join(__dirname, "/images")));
 const date = time.getDate() + "/" + time.getMonth() + "/" + time.getFullYear();

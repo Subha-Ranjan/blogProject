@@ -31,10 +31,10 @@ function Sidebar() {
         <div className="sidebarItem">
           <span className="sidebarTitle">FOLLOW US</span>
           <div className="sidebarSocial">
-            <i class="sidebarIcon fa-brands fa-twitter fa-shake"></i>
-            <i class="sidebarIcon fa-brands fa-facebook fa-spin"></i>
-            <i class="sidebarIcon fa-brands fa-youtube fa-beat-fade"></i>
-            <i class="sidebarIcon fa-brands fa-google fa-spin fa-spin-reverse"></i>
+            <i className="sidebarIcon fa-brands fa-twitter fa-shake"></i>
+            <i className="sidebarIcon fa-brands fa-facebook fa-spin"></i>
+            <i className="sidebarIcon fa-brands fa-youtube fa-beat-fade"></i>
+            <i className="sidebarIcon fa-brands fa-google fa-spin fa-spin-reverse"></i>
           </div>
         </div>
       </div>
