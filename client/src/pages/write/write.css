@@ -1,0 +1,61 @@
+.write {
+  padding-top: 50px;
+}
+
+.writeFormGroup {
+  margin-left: 150px; /*ml150*/
+  display: flex;
+}
+.writeIcon {
+  width: 25px; /* w25 */
+  height: 25px; /* h25 */
+  border-radius: 50%; /* bdrd -- 50% */
+  border: 1px solid;
+  /* Put the Icon-Circle in the middle */
+  display: flex;
+  justify-content: center; /*jcc*/
+  align-items: center; /*aic*/
+  /* xtra look n feel */
+  font-size: 20px; /*fsz20*/
+  color: rgb(121, 118, 118);
+  cursor: pointer; /*csr p*/
+}
+.writeInput {
+  font-size: 30px;
+  border: none;
+  padding: 20px; /*p20*/
+  width: 70vw; /* w70vw */
+}
+.writeInput:focus {
+  outline: none; /*oln*/
+}
+.writeText {
+  font-size: 20px;
+  /*to enable better scrolling*/
+  height: 100vw;
+}
+
+.writeForm {
+  position: relative;
+}
+.writeSubmit {
+  position: absolute; /*psa*/
+  top: 20px; /*t20*/
+  right: 50px;
+  color: white;
+  background-color: teal;
+  padding: 10px; /*p10*/
+
+  /* xtra look n feel */
+  border: none;
+  border-radius: 10px; /**bdrd 10 */
+  font-size: 1rem; /*fsz1r*/
+}
+
+.writeImg {
+  height: 250px;
+  width: 70vw;
+  margin-left: 150px;
+  border-radius: 10px;
+  object-fit: cover; /*crop the portion of img n cover*/
+}

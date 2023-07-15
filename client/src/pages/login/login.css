@@ -1,0 +1,65 @@
+#login {
+  height: calc(100vh);
+  display: flex;
+  flex-direction: column; /*fxdc*/
+  justify-content: center; /*jcc*/
+  align-items: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.pexels.com/photos/768473/pexels-photo-768473.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-size: cover;
+}
+/* https://redpithemes.com/Documentation/assets/img/page_bg/page_bg_blur02.jpg */
+
+.loginTitle {
+  font-size: 50px;
+}
+
+.loginForm {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column; /*fxdc*/
+}
+
+.loginForm > label {
+  margin: 10px 0;
+}
+
+.loginInput {
+  padding: 10px;
+  background-color: white; /*bgc w*/
+
+  border: none;
+  border-bottom: 1px solid rgb(129, 132, 129);
+  /* border-radius: 200px; */
+  /*Extra*/
+}
+
+.loginButton {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: lightcoral;
+  color: white;
+
+  border: none;
+  border-radius: 10px; /*make the button FAT*/
+  padding: 10px;
+}
+
+.loginRegisterButton {
+  margin-top: 10px;
+  cursor: pointer; /*cu*/
+
+  /**/
+  position: absolute; /*poab*/
+  top: 60px;
+  right: 20px; /*r20*/
+  background-color: rgb(64, 180, 180);
+
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
