@@ -5,3 +5,6 @@ export const LoginSuccess = (user) => ({
   payload: user, //37min:to updatre the state we gonna use "user"
 });
 export const LoginFailure = () => ({ type: "LOGIN_FAILURE" });
+
+export const Logout = () => ({ type: "LOGOUT" });
+

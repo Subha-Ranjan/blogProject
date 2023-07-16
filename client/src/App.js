@@ -7,23 +7,26 @@ import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
 import Topbar from "./components/topbar/Topbar";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { useContext } from "react";
+import { Context } from "./context/Context";
 
-let user = false;
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Topbar />,
-    children: [
-      { index: true, element: <Home /> },
-      { path: "login", element: user ? <Home /> : <Login /> },
-      { path: "register", element: user ? <Home /> : <Register /> },
-      { path: "write", element: user ? <Write /> : <Login /> },
-      { path: "settings", element: <Settings /> },
-      { path: "post/:post", element: <Single /> },
-    ],
-  },
-]);
 function App() {
+  let { user } = useContext(Context);
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Topbar />,
+      children: [
+        { index: true, element: <Home /> },
+        { path: "login", element: user ? <Home /> : <Login /> },
+        { path: "register", element: user ? <Home /> : <Register /> },
+        { path: "write", element: user ? <Write /> : <Login /> },
+        { path: "settings", element: <Settings /> },
+        { path: "post/:post", element: <Single /> },
+      ],
+    },
+  ]);
+
   return <RouterProvider router={router} />;
 }
 

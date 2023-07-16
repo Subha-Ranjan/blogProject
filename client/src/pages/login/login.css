@@ -48,6 +48,12 @@
   padding: 10px;
 }
 
+.loginButton:disabled{
+  cursor: not-allowed;
+  background-color: dimgrey;
+
+}
+
 .loginRegisterButton {
   margin-top: 10px;
   cursor: pointer; /*cu*/
