@@ -11,10 +11,9 @@ function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("pswrd:", passwordRef.current.value);
     dispatch({ type: "LOGIN_START" });
     try {
-      const res = await axios.post("auth/login", {
+      const res = await axios.post("/auth/login", {
         username: userRef.current.value,
         password: passwordRef.current.value,
       });
@@ -24,7 +23,8 @@ function Login() {
       dispatch({ type: "LOGIN_FAILURE" });
     }
   };
-  console.log("UserDataContext:", isFetching);
+  console.log("UserData-ContextAPI:", user);
+
   return (
     <div id="login">
       <span className="loginTitle">Login</span>
