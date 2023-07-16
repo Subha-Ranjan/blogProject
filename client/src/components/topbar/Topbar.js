@@ -3,7 +3,7 @@ import "./topbar.css";
 import { Link, Outlet } from "react-router-dom";
 
 function Topbar() {
-  const user = true; //USER logged in or not decides the top Right
+  const user = false; //USER logged in or not decides the top Right
   return (
     <>
       <div className="top">
