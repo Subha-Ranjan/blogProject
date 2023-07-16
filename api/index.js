@@ -59,7 +59,7 @@ app.post("/api/upload", upload.any("file"), (req, res) => {
 //=============  API ROUTES ==================================
 app.use("/api/auth", authRoute);
 app.use("/api/posts", postsRoute);
-app.use("/api/category", categoryRoute);
+app.use("/api/categories", categoryRoute);
 
 //=============  Listening to PORT ===========================
 app.listen(portNo, () => {
