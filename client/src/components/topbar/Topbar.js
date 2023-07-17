@@ -6,6 +6,7 @@ import { Link, Outlet } from "react-router-dom";
 function Topbar() {
   // const user = false; //USER logged in or not decides the top Right
   let { user, dispatch } = useContext(Context);
+  // console.log("User:", null || user.profilePic);
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
   };
@@ -50,7 +51,10 @@ function Topbar() {
           {user ? (
             <img
               className="topImg"
-              src="https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+              src={
+                user.profilePic ||
+                "https://1fid.com/wp-content/uploads/2022/07/aesthetic-profile-picture-2-1024x1024.jpg"
+              }
               alt=""
             />
           ) : (
