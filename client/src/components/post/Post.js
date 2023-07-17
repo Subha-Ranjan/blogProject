@@ -2,17 +2,19 @@ import "./post.css";
 import { Link } from "react-router-dom"; //rrd
 
 export default function Post({ post }) {
+  const PF = "http://localhost:5000/images/"; //Pubic Folder for Photos
   return (
     <div className="post">
-      <img
-        className="postImg"
-        src="https://images.pexels.com/photos/6758029/pexels-photo-6758029.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-        alt=""
-      />
+      {post.photo && (
+        <img
+          className="postImg"
+          src={PF + post.photo} //?? (1:09:40 )to use this url goto index.js in backend
+          alt=""
+        />
+      )}
       <div className="postInfo">
         <div className="postCats">
           {/* <span className="postCat">Music</span> */}
-
           {post.categories.map((c) => (
             <span className="postCat">{c.name}</span>
           ))}

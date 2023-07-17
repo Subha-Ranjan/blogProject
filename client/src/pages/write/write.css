@@ -50,6 +50,7 @@
   border: none;
   border-radius: 10px; /**bdrd 10 */
   font-size: 1rem; /*fsz1r*/
+  cursor: pointer;
 }
 
 .writeImg {
