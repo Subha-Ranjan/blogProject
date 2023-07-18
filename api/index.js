@@ -5,6 +5,7 @@ const multer = require("multer");
 const mongoose = require("mongoose");
 const time = new Date();
 const authRoute = require("./routes/auth");
+const userRoute = require("./routes/users");
 const postsRoute = require("./routes/posts");
 const categoryRoute = require("./routes/categories");
 const dotenv = require("dotenv"); //to function .env file - hide imp details
@@ -61,6 +62,7 @@ app.post("/api/upload", upload.any("file"), (req, res) => {
 app.use("/api/auth", authRoute);
 app.use("/api/posts", postsRoute);
 app.use("/api/categories", categoryRoute);
+app.use("/api/users", userRoute);
 
 //=============  Listening to PORT ===========================
 app.listen(portNo, () => {
