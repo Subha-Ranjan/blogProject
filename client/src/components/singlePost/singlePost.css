@@ -5,6 +5,10 @@
 .singlePostWrapper {
   padding: 20px;
   padding-right: 0;
+
+  /* for Input-fields n all to be in centre */
+  display: flex;
+  flex-direction: column;
 }
 
 .singlePostImg {
@@ -19,6 +23,21 @@
   margin: 10px;
   font-size: 28px;
   font-family: "Lora", sans-serif;
+}
+
+.singlePostTitleInput {
+  text-align: center;
+  margin: 10px;
+  font-size: 28px;
+  font-family: "Lora", sans-serif;
+  color: gray;
+  outline: none;
+  border: none;
+}
+.singlePostTitleInput:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
 }
 
 .singlePostEdit {
@@ -55,6 +74,30 @@
   color: #666;
   font-size: 18px;
   line-height: 25px;
+}
+.singlePostDescInput {
+  color: #666;
+  font-size: 18px;
+  line-height: 25px;
+  border: none;
+
+  border-bottom: 1px solid gray;
+}
+.singlePostDescInput:focus {
+  outline: none;
+}
+
+.singlePostButton {
+  border: none;
+  background-color: teal;
+  color: white;
+  padding: 5px;
+  width: 100px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  /* //to algn btn at the right-side */
+  align-self: flex-end;
 }
 
 .singlePostDesc::first-letter {

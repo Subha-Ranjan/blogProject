@@ -8,7 +8,7 @@ function Write() {
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
   const [file, setFile] = useState(null);
-  const { user } = useContext(Context);
+  const { user } = useContext(Context); 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -30,7 +30,7 @@ function Write() {
     try {
       console.log("NewPost:", newPost);
       const res = await axios.post("/posts", newPost); //http://localhost:5000/api/posts
-      window.location.replace("/post/" + res.data._id);
+      window.location.replace("/post/" + res.data._id); //the redirect to post page
     } catch (err) {}
   };
 
